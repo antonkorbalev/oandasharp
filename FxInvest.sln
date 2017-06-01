@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OandaConnect", "OandaConnect\OandaConnect.csproj", "{2D535C6E-EF15-4CF2-96CF-B23610FBBC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.Tests", "Module.Tests\Module.Tests.csproj", "{87C4ADC1-6416-4439-997C-8EFE860A3F73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D535C6E-EF15-4CF2-96CF-B23610FBBC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D535C6E-EF15-4CF2-96CF-B23610FBBC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D535C6E-EF15-4CF2-96CF-B23610FBBC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D535C6E-EF15-4CF2-96CF-B23610FBBC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C4ADC1-6416-4439-997C-8EFE860A3F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C4ADC1-6416-4439-997C-8EFE860A3F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C4ADC1-6416-4439-997C-8EFE860A3F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C4ADC1-6416-4439-997C-8EFE860A3F73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
