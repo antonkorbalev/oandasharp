@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Description\AccountInfo.cs" />
     <Compile Include="FxConnect.cs" />
+    <Compile Include="OandaBase.cs" />
     <Compile Include="OandaEnv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
