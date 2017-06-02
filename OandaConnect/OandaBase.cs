@@ -20,21 +20,18 @@ namespace OandaConnect
             _client = new RestClient(clientAddr);
         }
 
-        private RestRequest GetRequest(string path, Method method, Parameter[] parameters)
+        private RestRequest GetRequest(string path, Method method)
         {
             var req = new RestRequest(path, method);
             req.AddHeader("Content-Type", "application/json");
             req.AddHeader("Authorization", string.Format("Bearer {0}", _token));
-            if (parameters != null)
-                foreach (var param in parameters)
-                    req.Parameters.Add(param);
             req.RequestFormat = DataFormat.Json;
             return req;
         }
 
-        internal T GetResponce<T>(string path, Method method, Parameter[] parameters = null) where T : class, new()
+        internal T GetResponce<T>(string path, Method method) where T : class, new()
         {
-            var req = GetRequest(path, method, parameters);
+            var req = GetRequest(path, method);
             var resp = _client.Execute<T>(req);
             Debug.WriteLine(string.Format("Path:{0}", path));
             Debug.WriteLine(string.Format("Answer:{0}", resp.Content));
@@ -45,7 +42,7 @@ namespace OandaConnect
 
         internal void GetResponceAsync<T>(string path, Method method, Action<IRestResponse<T>> callback, Parameter[] parameters = null) where T : class, new()
         {
-            var req = GetRequest(path, method, parameters);
+            var req = GetRequest(path, method);
             _client.ExecuteAsync(req, (IRestResponse<T> resp) => 
             {
                 Debug.WriteLine(string.Format("Path:{0}", path));

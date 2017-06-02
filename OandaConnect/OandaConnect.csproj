@@ -45,10 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Description\AccountInfo.cs" />
+    <Compile Include="Description\CandlesInfo.cs" />
     <Compile Include="FxConnect.cs" />
     <Compile Include="OandaBase.cs" />
     <Compile Include="OandaEnv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rfc3339DateTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
