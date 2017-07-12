@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OandaConnect;
 using System.Linq;
+using FxInvest;
 
 namespace Module.Tests
 {

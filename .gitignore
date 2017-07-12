@@ -6,3 +6,6 @@
 /Module.Tests/obj
 /Module.Tests/bin
 /.vs/FxInvest/v14
+/FxInvest/bin/Debug
+/FxInvest/obj/Debug
+/FxInvest.userprefs
